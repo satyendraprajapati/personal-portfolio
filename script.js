@@ -1,26 +1,26 @@
-// Particles Background
+// Initialize Particles.js
 particlesJS('particles-background', {
   particles: {
-    number: { value: 80 },
-    color: { value: '#ffffff' },
-    shape: { type: 'circle' },
+    number: { value: 80, density: { enable: true, value_area: 800 } },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
     opacity: { value: 0.5 },
     size: { value: 3 },
     move: {
       enable: true,
       speed: 2,
-      direction: 'none',
+      direction: "none",
       random: false,
       straight: false,
-      out_mode: 'out',
+      out_mode: "out",
       bounce: false,
     }
   },
   interactivity: {
-    detect_on: 'canvas',
+    detect_on: "canvas",
     events: {
-      onhover: { enable: true, mode: 'repulse' },
-      onclick: { enable: true, mode: 'push' },
+      onhover: { enable: true, mode: "repulse" },
+      onclick: { enable: true, mode: "push" },
       resize: true
     }
   },
@@ -47,5 +47,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     document.querySelector(this.getAttribute('href')).scrollIntoView({
       behavior: 'smooth'
     });
+  });
+});
+
+// Back to Top Button
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 300) {
+    backToTopButton.style.opacity = '1';
+    backToTopButton.style.visibility = 'visible';
+  } else {
+    backToTopButton.style.opacity = '0';
+    backToTopButton.style.visibility = 'hidden';
+  }
+});
+
+backToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
   });
 });
