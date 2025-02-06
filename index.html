@@ -4,164 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Satyendra Prajapati - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Satyendra Prajapati</h1>
-    <p>Sales Coordinator | Data Analyst | Web Developer</p>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-   
+  <!-- Add particle background container -->
+  <div id="particles-background"></div>
+
+  <header class="header-bg">
+    <div class="header-overlay">
+      <h1>Satyendra Prajapati</h1>
+      <p>Sales Coordinator | Data Analyst | Web Developer</p>
+      <nav>
+        <ul>
+          <!-- ... keep existing nav items ... -->
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="about" class="fade-in">
-  <h2>About Me</h2>
-  <p>
-    Hi, I'm <strong>Satyendra Prajapati</strong>, a versatile professional with over <strong>10 years of experience</strong> in sales coordination, data analysis, and web development. My journey has been driven by a passion for solving complex problems, optimizing processes, and delivering results that drive organizational growth.
-  </p>
-  <p>
-    As a <strong>Sales Coordinator</strong> at Switz International Pvt Ltd, I’ve honed my skills in team management, performance tracking, and strategic planning. I’ve successfully set and achieved sales targets, implemented incentive programs, and ensured seamless coordination across teams.
-  </p>
-  <p>
-    In my role as a <strong>Data Analyst</strong> at Banswara Garments Pvt. Ltd., I’ve leveraged tools like Python, Pandas, and SQL to analyze data, identify trends, and create actionable insights. My ability to translate data into visual dashboards and reports has empowered stakeholders to make informed decisions.
-  </p>
-  <p>
-    I’m also a skilled <strong>Web Developer</strong>, proficient in HTML, CSS, JavaScript, and React JS. I enjoy building responsive, user-friendly websites and applications that solve real-world problems. My technical expertise extends to AI tools like ChatGPT and Copilot, which I use to enhance productivity and innovation.
-  </p>
-  <p>
-    I hold a <strong>Graduation degree</strong> from Dr. Ram Manohar Lohia Awadh University, along with diplomas in <strong>Computer Application and System Management</strong> and <strong>Web Development</strong>. My diverse skill set allows me to adapt to dynamic environments and contribute effectively to cross-functional teams.
-  </p>
-  <p>
-    My career objective is to be associated with an organization that provides me with opportunities to grow professionally, contribute to its success, and pursue a challenging and fulfilling career. I’m always eager to learn, innovate, and take on new challenges.
-  </p>
-  <p>
-    Let’s connect and explore how I can add value to your team or project!
-  </p>
-  <a href="#contact" class="cta-button">Contact Me</a>
-</section>
+  <!-- Add profile image in About section -->
+  <section id="about" class="fade-in section-with-bg">
+    <div class="about-content">
+      <div class="profile-img">
+        <img src="https://example.com/your-profile-image.jpg" alt="Satyendra Prajapati">
+      </div>
+      <div class="about-text">
+        <!-- ... keep existing about content ... -->
+      </div>
+    </div>
+  </section>
 
-  <section id="experience" class="fade-in">
+  <!-- Updated Experience section with timeline -->
+  <section id="experience" class="fade-in timeline-section">
     <h2>Professional Experience</h2>
-    <div class="job">
-      <h3>Sales Coordinator</h3>
-      <p><strong>Switz International Pvt Ltd.</strong> | 01/05/2018 - Present</p>
-      <ul>
-        <li>Prepare and distribute detailed sales reports to track the performance of the sales team.</li>
-        <li>Set clear and achievable sales targets for the team.</li>
-        <li>Develop and implement incentive programs to motivate the sales team.</li>
-        <li>Monitor and evaluate the performance of the sales team regularly.</li>
-      </ul>
-    </div>
-    <div class="job">
-      <h3>Data Analyst</h3>
-      <p><strong>Banswara Garments Pvt. Ltd.</strong> | 2018 - 2024</p>
-      <ul>
-        <li>Collect and process data from various sources, ensuring accuracy and relevance.</li>
-        <li>Analyze data using statistical tools to identify patterns and trends.</li>
-        <li>Create visual representations of data findings through charts and dashboards.</li>
-      </ul>
-    </div>
-    <div class="job">
-      <h3>Data Management</h3>
-      <p><strong>SIN Denim Clothing Culture</strong> | Aug 2017 - 2018</p>
-      <ul>
-        <li>Collect, analyze, and disseminate data to management in a timely manner.</li>
-        <li>Ensure databases are updated and accurate.</li>
-        <li>Train employees on new systems and provide troubleshooting assistance.</li>
-      </ul>
+    <div class="timeline">
+      <!-- Add timeline items with icons -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <!-- ... keep job content ... -->
+      </div>
+      <!-- Repeat for other jobs -->
     </div>
   </section>
 
-  <section id="education" class="fade-in">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Graduation</strong> - Dr. Ram Manohar Lohia Awadh University</li>
-      <li><strong>Diploma in Computer Application and System Management</strong></li>
-      <li><strong>Web Development Diploma</strong></li>
-    </ul>
-  </section>
-
-  <section id="skills" class="fade-in">
+  <!-- Add skills icons -->
+  <section id="skills" class="fade-in skills-section">
     <h2>Skills</h2>
-    <ul>
-      <li><strong>Operating Systems:</strong> Microsoft Windows, Linux, macOS</li>
-      <li><strong>Office Package:</strong> Microsoft Word, Excel, PowerPoint, Outlook</li>
-      <li><strong>Database:</strong> SQL, MySQL</li>
-      <li><strong>Programming Languages:</strong> Python, JavaScript</li>
-      <li><strong>Libraries and Frameworks:</strong> Pandas, NumPy, Seaborn, React JS</li>
-      <li><strong>AI Tools:</strong> ChatGPT, Copilot, Deepseek</li>
-    </ul>
-  </section>
-
-  <section id="testimonials" class="fade-in">
-    <h2>Testimonials</h2>
-    <div class="testimonial">
-      <p>"Satyendra is a highly skilled professional with a strong work ethic. His attention to detail and problem-solving skills are exceptional."</p>
-      <p><strong>- Abbas Kalbe, Manager at Switz International</strong></p>
-    </div>
-    <div class="testimonial">
-      <p>"Working with Satyendra was a pleasure. He consistently delivered high-quality work and was a great team player."</p>
-      <p><strong>- Bhupendra, Colleague at Banswara Garments</strong></p>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fab fa-python"></i>
+        <h3>Python & Data Science</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-database"></i>
+        <h3>Database Management</h3>
+      </div>
+      <!-- Add more skill cards -->
     </div>
   </section>
 
-  <section id="blog" class="fade-in">
-    <h2>Insights & Blog</h2>
-    <div class="blog-post">
-      <h3>5 Tips for Effective Data Analysis</h3>
-      <p>Learn how to analyze data efficiently and make data-driven decisions.</p>
-      <a href="#">Read More</a>
-    </div>
-    <div class="blog-post">
-      <h3>How to Improve Sales Team Performance</h3>
-      <p>Discover strategies to motivate and manage a high-performing sales team.</p>
-      <a href="#">Read More</a>
+  <!-- Updated Contact section with map -->
+  <section id="contact" class="fade-in contact-section">
+    <div class="contact-content">
+      <div class="contact-info">
+        <!-- ... contact info ... -->
+      </div>
+      <div class="contact-map">
+        <iframe src="https://maps.google.com/maps?q=Daman,Gujarat&output=embed"></iframe>
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="fade-in">
-    <h2>Contact Me</h2>
-    <p><strong>Email:</strong> <a href="mailto:satya15793@gmail.com">satya15793@gmail.com</a></p>
-    <p><strong>Phone:</strong> <a href="tel:7069405090">7069405090</a></p>
-    <p><strong>Address:</strong> Amaliya Somnath, Daman, Gujarat</p>
-    <form id="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+  <!-- Keep other sections similar with added classes -->
 
-  <section id="cta" class="fade-in">
-    <h2>Let's Work Together!</h2>
-    <p>If you're looking for a dedicated professional with a diverse skill set, I'd love to hear from you. Let's discuss how I can contribute to your team.</p>
-    <a href="#contact" class="cta-button">Contact Me</a>
-    <a href="https://satyendraprajapati.github.io/resume/" download class="cta-button">Download My Resume</a>
-  </section>
-
+  <!-- Update footer with social icons -->
   <footer>
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-      <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
-    <p>&copy; 2023 Satyendra Prajapati. All rights reserved.</p>
+    <!-- ... -->
   </footer>
 
-  <!-- Back to Top Button -->
-  <button id="back-to-top" title="Go to top">↑</button>
-
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
