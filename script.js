@@ -50,6 +50,39 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+
+//Form Handling
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const form = event.target;
+        const data = new FormData(form);
+        const jsonData = {};
+
+        data.forEach((value, key) => {
+            jsonData[key] = value;
+        });
+
+        fetch('https://formspree.io/f/manqbdgj', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(jsonData)
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Form submitted successfully!');
+            } else {
+                alert('Error submitting form.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Error submitting form.');
+        });
+    });
+
 // Back to Top Button
 const backToTopButton = document.getElementById('back-to-top');
 
